@@ -8,6 +8,8 @@ const score1Element = document.getElementById("score--1");
 const current0Element = document.getElementById("current--0");
 const current1Element = document.getElementById("current--1");
 const diceElement = document.querySelector(".dice");
+const trophy0Element = document.getElementById("trophy--0");
+const trophy1Element = document.getElementById("trophy--1");
 const btnNew = document.querySelector(".btn--new");
 const btnRoll = document.querySelector(".btn--roll");
 const btnHold = document.querySelector(".btn--hold");
@@ -28,6 +30,8 @@ function init() {
   current1Element.textContent = 0;
 
   diceElement.classList.add("hidden");
+  trophy0Element.classList.add("hidden");
+  trophy1Element.classList.add("hidden");
   player0Element.classList.remove("player--winner");
   player1Element.classList.remove("player--winner");
   player0Element.classList.remove("player--active");
@@ -74,9 +78,12 @@ btnHold.addEventListener("click", function () {
       scores[activePlayer];
 
     // 2. Check if player's score is >= 100
-    if (scores[activePlayer] >= 100) {
+    if (scores[activePlayer] >= 20) {
       playing = false;
       diceElement.classList.add("hidden");
+      document
+        .getElementById(`trophy--${activePlayer}`)
+        .classList.remove("hidden");
       document
         .querySelector(`.player--${activePlayer}`)
         .classList.add("player--winner");

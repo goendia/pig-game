@@ -56,6 +56,11 @@ main {
   margin-bottom: 1rem;
 }
 
+.trophy {
+  font-size: 8rem;
+  font-weight: 300;
+  margin-bottom: auto;
+}
 .score {
   font-size: 8rem;
   font-weight: 300;
