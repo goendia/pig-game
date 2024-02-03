@@ -1,7 +1,7 @@
 {
   "name": "electron-pig-game",
   "version": "1.0.0",
-  "description": "",
+  "description": "Pig game create during udemy JS course",
   "main": "main.js",
   "scripts": {
     "start": "electron-forge start",
