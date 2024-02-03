@@ -1,5 +1,5 @@
 {
-  "name": "electron-pig-game",
+  "name": "pig-game",
   "version": "1.0.0",
   "description": "Pig game create during udemy JS course",
   "main": "src/main.js",
