@@ -41,9 +41,8 @@
           "name": "@electron-forge/publisher-github",
           "config": {
             "repository": {
-              "owner": "erikhofer",
-              "name": "electron-publish-example",
-              "draft": true
+              "owner": "goendia",
+              "name": "Electron Pig Game"
             }
           }
         }
