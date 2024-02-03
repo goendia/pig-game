@@ -2,7 +2,7 @@
   "name": "electron-pig-game",
   "version": "1.0.0",
   "description": "Pig game create during udemy JS course",
-  "main": "main.js",
+  "main": "src/main.js",
   "scripts": {
     "start": "electron-forge start",
     "test": "echo \"Error: no test specified\" && exit 1",
