@@ -43,7 +43,7 @@
           "config": {
             "repository": {
               "owner": "goendia",
-              "name": "Electron Pig Game"
+              "name": "pig-game"
             }
           }
         }
