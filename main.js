@@ -5,7 +5,7 @@ const createWindow = () => {
     width: 1200,
     height: 800,
   });
-  win.loadFile("src/index.html");
+  win.loadFile("index.html");
 };
 
 app.whenReady().then(() => {
