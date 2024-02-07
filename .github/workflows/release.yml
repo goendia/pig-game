@@ -2,13 +2,13 @@ name: Release
 on:
   push:
     tags:
-      - 'v*'
+      - "v*"
 
 jobs:
-strategy:
-matrix:
-os: [ubuntu-latest, macos-latest, windows-latest]
-runs-on: ${{ matrix.os }}
+  strategy:
+    matrix:
+      os: [ubuntu-latest, macos-latest, windows-latest]
+  runs-on: ${{ matrix.os }}
   steps:
     - uses: actions/checkout@v4
     - uses: actions/setup-node@master

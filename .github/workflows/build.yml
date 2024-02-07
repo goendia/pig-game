@@ -8,12 +8,12 @@ jobs:
         os: [ubuntu-latest, macos-latest, windows-latest]
     runs-on: ${{ matrix.os }}
 
-      steps:
-        - uses: actions/checkout@v4
-        - uses: actions/setup-node@master
-          with:
-            node-version: 20
-        - name: install dependencies
-          run: npm install
-        - name: build
-          run: npm run make
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@master
+        with:
+          node-version: 20
+      - name: install dependencies
+        run: npm install
+      - name: build
+        run: npm run make
