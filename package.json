@@ -42,7 +42,8 @@
             "repository": {
               "owner": "goendia",
               "name": "pig-game"
-            }
+            },
+            "draft": true
           }
         }
       ]
